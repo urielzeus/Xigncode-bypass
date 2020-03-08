@@ -9,6 +9,7 @@ module.exports = function XigncodeBypass(mod) {
     }
 
     // Remove vulnerable driver from system
+
     try {
         fs.unlinkSync('C:\\Windows\\xhunter1.sys');
         mod.log('Traces of a previous xigncode installation have been located and removed from your system!');
